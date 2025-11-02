@@ -1,6 +1,5 @@
-package com.ecom.productcatalog;
+package com.ecom.productcatalog.model;
 
-import com.ecom.productcatalog.model.product;
 import jakarta.persistence.*;
 import lombok.Data;
 
