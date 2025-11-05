@@ -1,6 +1,7 @@
 package com.ecom.productcatalog.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -17,6 +18,7 @@ public class product {
     private Double price;
 
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "category_id" , nullable = false)
     private category category;
 
